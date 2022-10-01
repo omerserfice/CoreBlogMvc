@@ -1,0 +1,16 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Category>
+<div class="widget">
+    <h2 class="widget-title">Kategoriler</h2>
+    <div class="trend-videos">
+        @foreach (var item in Model)
+       {
+           <div class="blog-box">
+            <div class="blog-meta">
+                <h5><a href="tech-single.html" title="">@item.CategoryName</a></h5>
+            </div>
+        </div> 
+           <hr class="invis">
+       }
+  
+    </div>
+</div>
