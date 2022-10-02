@@ -1,0 +1,65 @@
+﻿@using EntityLayer.Concrete
+@model List<About>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout_.cshtml";
+}
+
+
+    <div id="wrapper">
+      
+        <section class="section single-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area text-center">
+                                <ol class="breadcrumb hidden-xs-down">
+                                    <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Hakkımızda</a></li>
+                                </ol>
+                                <h3>Hakkımızda</h3>
+                            </div><!-- end title -->
+
+                            <div class="single-post-media">
+                                <img src="upload/tech_menu_08.jpg" alt="" class="img-fluid">
+                            </div><!-- end media -->
+
+                            <div class="blog-content">  
+                                <div class="pp">
+                                    @foreach (var item in Model)
+                                   {
+                                      <p>@item.AboutDetails1</p>
+                                      <p>@item.AboutDetails2</p>
+                                   }
+
+                                </div><!-- end pp -->
+
+                                <img src="upload/tech_menu_09.jpg" alt="" class="img-fluid img-fullwidth">
+
+                            </div><!-- end content -->
+
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="sidebar">
+                            <div class="widget">
+                                <div class="banner-spot clearfix">
+                                    <div class="banner-img">
+                                        <img src="upload/banner_07.jpg" alt="" class="img-fluid">
+                                    </div><!-- end banner-img -->
+                                </div><!-- end banner -->
+                            </div><!-- end widget -->
+
+                     @await Html.PartialAsync("~/Views/About/SocialMediaAbout.cshtml")
+                        </div><!-- end sidebar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+
+        <div class="dmtop">Scroll to Top</div>
+        
+    </div>

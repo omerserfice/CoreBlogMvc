@@ -12,34 +12,6 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfAboutRepository : GenericRepository<About>, IAboutDal
     {
-        public void Delete(About t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public About GetByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<About> GetListAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<About> GetListAll(Expression<Func<About, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Insert(About t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(About t)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
