@@ -14,8 +14,8 @@
     <div class="row text-center mt-4 g-3 align-items-center">
         <h3>Giriş Ekranı</h3>
         <hr class="cizgi"/>
-         @using (Html.BeginForm("Index", "Login", FormMethod.Post))
-                    {
+
+        <form method="post">
         <div class=row>
             <div class="col-lg-3">
             </div>
@@ -42,7 +42,7 @@
                 <button class="btn btn-success" type="submit">Giriş Yap</button>
             </div>
         </div>
-        }
+        </form>
         <hr class="cizgi"/>
 
     </div>
